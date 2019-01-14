@@ -129,9 +129,9 @@ def set_ventilation_level(nr):
     elif nr == 2:
         data = serial_command(b'\x07\xF0\x00\x99\x01\x02\x49\x07\x0F')
     elif nr == 3:
-	data = serial_command(b'\x07\xF0\x00\x99\x01\x03\x4A\x07\x0F')
+        data = serial_command(b'\x07\xF0\x00\x99\x01\x03\x4A\x07\x0F')
     elif nr == 4:
-	data = serial_command(b'\x07\xF0\x00\x99\x01\x04\x4B\x07\x0F')        
+        data = serial_command(b'\x07\xF0\x00\x99\x01\x04\x4B\x07\x0F')        
 
     if data:
         if ( data[0] == '07' and data[1] == 'f3' ):
