@@ -24,20 +24,20 @@ sudo pip3 install paho-mqtt
 start script with python3 whr930.py
 """
 
-IDXOutsideAirTemp=20		# temperature
-IDXSupplyAirTemp=21		# temperature
-IDXReturnAirTemp=22		# temperature
-IDXExhaustAirTemp=23		# temperature
-IDXIntakeFanSpeed=329		# text
-IDXExhaustFanSpeed=330		# text
-IDXIntakeFanRPM=331		# text
-IDXExhaustFanRPM=332		# text
-IDXIntakeFanActive=333		# text
-IDXFanLevel=334			# text
-IDXFilter=335			# text
-IDXSelector=125			# selector 0=auto 10=away 20=low 30=middle 40=high !! Depends on model/CO2 sensor etc !!
-SerialPort='/dev/YPort'		# Serial port WHR930
-MQTTServer='127.0.0.1'		# IP MQTT broker
+IDXOutsideAirTemp=329           # temperature
+IDXSupplyAirTemp=330            # temperature
+IDXReturnAirTemp=331            # temperature
+IDXExhaustAirTemp=332           # temperature
+IDXIntakeFanSpeed=333           # text
+IDXExhaustFanSpeed=334          # text
+IDXIntakeFanRPM=335             # text
+IDXExhaustFanRPM=336            # text
+IDXIntakeFanActive=337          # text
+IDXFanLevel=338                 # text
+IDXFilter=339                   # text
+IDXSelector=340                 # selector 0=auto 10=away 20=low 30=middle 40=high !! Depends on model/CO2 sensor etc !!
+SerialPort='/dev/YPort'         # Serial port WHR930
+MQTTServer='127.0.0.1'          # IP MQTT broker
 
 import paho.mqtt.client as mqtt
 import time
