@@ -35,7 +35,8 @@ IDXStrIntakeFanActive=333	# text
 IDXFanLevel=334			# text
 IDXFilter=335			# text
 IDXSelector=125			# selector 0=auto 10=away 20=low 30=middle 40=high
-SerialPort='/dev/YPort'		# Serial port to the WHR930
+SerialPort='/dev/YPort'		# Serial port WHR930
+MQTTServer='127.0.0.1'		# IP MQTT broker
 
 print("************************")
 print("* WHR930 MQTT Domoticz *")
@@ -264,7 +265,7 @@ mqttc.on_message = on_message
 mqttc.on_disconnect = on_disconnect
 
 # Connect to the MQTT server
-mqttc.connect('127.0.0.1', port=1883, keepalive=45)
+mqttc.connect(MQTTServer, port=1883, keepalive=45)
 
 # Open the serial port
 ser = serial.Serial(port = SerialPort, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE)
