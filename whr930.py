@@ -32,7 +32,7 @@ IDXIntakeFanSpeed=329		# text
 IDXExhaustFanSpeed=330		# text
 IDXIntakeFanRPM=331		# text
 IDXExhaustFanRPM=332		# text
-IDXStrIntakeFanActive=333	# text
+IDXIntakeFanActive=333	# text
 IDXFanLevel=334			# text
 IDXFilter=335			# text
 IDXSelector=125			# selector 0=auto 10=away 20=low 30=middle 40=high !! Depends on model/CO2 sensor etc !!
@@ -178,7 +178,7 @@ def get_ventilation_status():
             StrIntakeFanActive = 'Unknown'
             
         publish_message(msg='{ "idx" : ' +str(IDXFanLevel) +str(', "nvalue" : 0, "svalue" :"') +str(FanLevel) +str('"}'), mqtt_path='domoticz/in')
-        publish_message(msg='{ "idx" : ' +str(IDXStrIntakeFanActive) +str(', "nvalue" : 0, "svalue" :"') +str(StrIntakeFanActive) +str('"}'), mqtt_path='domoticz/in')
+        publish_message(msg='{ "idx" : ' +str(IDXIntakeFanActive) +str(', "nvalue" : 0, "svalue" :"') +str(StrIntakeFanActive) +str('"}'), mqtt_path='domoticz/in')
 
         debug_msg('ReturnAirLevel: {}, SupplyAirLevel: {}, FanLevel: {}, IntakeFanActive: {}'.format(ReturnAirLevel, SupplyAirLevel, FanLevel, StrIntakeFanActive))
 
