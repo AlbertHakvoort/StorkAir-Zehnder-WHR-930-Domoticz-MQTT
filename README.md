@@ -52,8 +52,11 @@ Add the following dummy Devices in Domoticz :
 After installing the dependencies, clone this repository and modify the settings in src/whr930.py and run sudo make install.
 
 $ git clone https://github.com/AlbertHakvoort/StorkAir-Zehnder-WHR-930-Domoticz-MQTT.git
+
 $ vi src/whr930.py
+
 $ sudo make install
+
 
 edit the whr930.py and fill the IDX's, serialport and MQTTserver address.
 
