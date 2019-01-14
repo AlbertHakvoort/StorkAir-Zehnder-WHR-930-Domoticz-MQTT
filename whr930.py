@@ -49,8 +49,6 @@ print("* WHR930 MQTT Domoticz *")
 print("************************")
 print("")
 
-fan_level=0
-
 def debug_msg(message):
     if debug is True:
         print('{0} DEBUG: {1}'.format(time.strftime("%d-%m-%Y %H:%M:%S", time.gmtime()), message))
