@@ -1,16 +1,19 @@
 Interface with a StorkAir WHR930 on Domoticz
 
+Publish every 10 seconds the status on a MQTT Domoticz/in topic
+Listen on MQTT topic for commands to set the ventilation level
+
 Version 0.8 by albert[@]hakvoort[.]co
 
 [based on code from Mosibi]
 
-Publish every 10 seconds the status on a MQTT Domoticz/in topic
-Listen on MQTT topic for commands to set the ventilation level
+
 
 todo :
 - set bypass temperature
 - check on faulty messages
 - serial check
+
 
 The following packages are needed:
 
