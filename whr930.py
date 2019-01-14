@@ -16,12 +16,13 @@ todo :
 - check on faulty messages
 - serial check
 
-"""
+The following packages are needed
 
-import paho.mqtt.client as mqtt
-import time
-import serial
-import json
+sudo apt-get install python3-serial python3-pip python3-yaml
+sudo pip3 install paho-mqtt
+
+start script with python3 whr930.py
+"""
 
 IDXOutsideAirTemp=20		# temperature
 IDXSupplyAirTemp=21		# temperature
@@ -37,6 +38,11 @@ IDXFilter=335			# text
 IDXSelector=125			# selector 0=auto 10=away 20=low 30=middle 40=high
 SerialPort='/dev/YPort'		# Serial port WHR930
 MQTTServer='127.0.0.1'		# IP MQTT broker
+
+import paho.mqtt.client as mqtt
+import time
+import serial
+import json
 
 print("************************")
 print("* WHR930 MQTT Domoticz *")
