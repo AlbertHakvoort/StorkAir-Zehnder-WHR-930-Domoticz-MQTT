@@ -14,11 +14,12 @@ todo :
 
 The following packages are needed:
 
-sudo apt-get install python3-serial python3-pip python3-yaml
+- sudo apt-get install python3-serial python3-pip python3-yaml
 
-sudo pip3 install paho-mqtt
+- sudo pip3 install paho-mqtt
 
 start script with python3 whr930.py
+
 
 Add the following dummy Devices in Domoticz :
 
@@ -38,16 +39,16 @@ Add the following dummy Devices in Domoticz :
 
 - ExhaustFanRPM		# text
 
-IntakeFanActive		# text
+- IntakeFanActive		# text
 
-FanLevel			# text
+- FanLevel			# text
 
-Filter				# text
+- Filter				# text
 
-Selector			# selector 0=auto 10=away 20=low 30=middle 40=high !! Depends on model/CO2 sensor etc !!
+- Selector			# selector 0=auto 10=away 20=low 30=middle 40=high !! Depends on model/CO2 sensor etc !!
 
 
-edit the whr930.py and fill the IDX's, serialport and MQTTserver address.
+* edit the whr930.py and fill the IDX's, serialport and MQTTserver address.
 
-SerialPort='/dev/YPort'		# Serial port WHR930
-MQTTServer='127.0.0.1'		# IP MQTT broker
+- SerialPort='/dev/YPort'		# Serial port WHR930
+- MQTTServer='127.0.0.1'		# IP MQTT broker
