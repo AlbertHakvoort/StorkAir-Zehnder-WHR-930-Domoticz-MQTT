@@ -2,10 +2,20 @@
 # -*- coding: utf-8 -*-
 
 """
-Interface with a StorkAir WHR930
+Interface with a StorkAir WHR930 on Domoticz
+Version 0.8 by albert[@]hakvoort[.]co
 
-Publish every 10 seconds the status on a MQTT topic
+code based on code from Mosibi
+
+Publish every 10 seconds the status on a MQTT Domoticz/in topic
 Listen on MQTT topic for commands to set the ventilation level
+
+todo :
+
+- set bypass temperature
+- check on faulty messages
+- serial check
+
 """
 
 import paho.mqtt.client as mqtt
@@ -13,18 +23,18 @@ import time
 import serial
 import json
 
-IDXOutsideAirTemp=20
-IDXSupplyAirTemp=21
-IDXReturnAirTemp=22
-IDXExhaustAirTemp=23
-IDXIntakeFanSpeed=329
-IDXExhaustFanSpeed=330
-IDXIntakeFanRPM=331
-IDXExhaustFanRPM=332
-IDXStrIntakeFanActive=333
-IDXFanLevel=334
-IDXFilter=335
-IDXSelector=125
+IDXOutsideAirTemp=20		# temperature
+IDXSupplyAirTemp=21		# temperature
+IDXReturnAirTemp=22		# temperature
+IDXExhaustAirTemp=23		# temperature
+IDXIntakeFanSpeed=329		# text
+IDXExhaustFanSpeed=330		# text
+IDXIntakeFanRPM=331		# text
+IDXExhaustFanRPM=332		# text
+IDXStrIntakeFanActive=333	# text
+IDXFanLevel=334			# text
+IDXFilter=335			# text
+IDXSelector=125			# selector 0=auto 10=away 20=low 30=middle 40=high
 
 print("************************")
 print("* WHR930 MQTT Domoticz *")
