@@ -35,7 +35,7 @@ IDXExhaustFanRPM=332		# text
 IDXStrIntakeFanActive=333	# text
 IDXFanLevel=334			# text
 IDXFilter=335			# text
-IDXSelector=125			# selector 0=auto 10=away 20=low 30=middle 40=high
+IDXSelector=125			# selector 0=auto 10=away 20=low 30=middle 40=high !! Depends on model/CO2 sensor etc !!
 SerialPort='/dev/YPort'		# Serial port WHR930
 MQTTServer='127.0.0.1'		# IP MQTT broker
 
