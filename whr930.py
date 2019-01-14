@@ -86,7 +86,7 @@ def on_message(client, userdata, message):
 		selector = int(json_data['svalue1'])
 		if 0 == selector: 
 			print("s1 is 0")
-			fan_level=1
+			fan_level=0
 		elif 10 == selector: 
 			print("s1 is 10")
 			fan_level=1
@@ -123,15 +123,15 @@ def serial_command(cmd):
 
 def set_ventilation_level(nr):
     if nr == 0:
-        data = serial_command(b'\x07\xF0\x00\x99\x01\x01\x48\x07\x0F')
+	data = serial_command(b'\x07\xF0\x00\x99\x01\x00\x47\x07\x0F')
     elif nr == 1:
-        data = serial_command(b'\x07\xF0\x00\x99\x01\x02\x49\x07\x0F')
+        data = serial_command(b'\x07\xF0\x00\x99\x01\x01\x48\x07\x0F')
     elif nr == 2:
-        data = serial_command(b'\x07\xF0\x00\x99\x01\x03\x4A\x07\x0F')
+	data = serial_command(b'\x07\xF0\x00\x99\x01\x02\x49\x07\x0F')
     elif nr == 3:
-        data = serial_command(b'\x07\xF0\x00\x99\x01\x04\x4B\x07\x0F')
+	data = serial_command(b'\x07\xF0\x00\x99\x01\x03\x4A\x07\x0F')
     elif nr == 4:
-        data = serial_command(b'\x07\xF0\x00\x99\x01\x00\x47\x07\x0F')
+	data = serial_command(b'\x07\xF0\x00\x99\x01\x04\x4B\x07\x0F')        
 
     if data:
         if ( data[0] == '07' and data[1] == 'f3' ):
