@@ -33,11 +33,17 @@ ExhaustAirTemp		# temperature
 IntakeFanSpeed		# text
 
 ExhaustFanSpeed		# text
+
 IntakeFanRPM		# text
+
 ExhaustFanRPM		# text
+
 IntakeFanActive		# text
+
 FanLevel			# text
+
 Filter				# text
+
 Selector			# selector 0=auto 10=away 20=low 30=middle 40=high !! Depends on model/CO2 sensor etc !!
 
 
