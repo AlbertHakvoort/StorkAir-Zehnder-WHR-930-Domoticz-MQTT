@@ -13,8 +13,11 @@ todo :
 - serial check
 
 The following packages are needed:
+
 sudo apt-get install python3-serial python3-pip python3-yaml
+
 sudo pip3 install paho-mqtt
+
 start script with python3 whr930.py
 
 Add the following dummy Devices in Domoticz :
