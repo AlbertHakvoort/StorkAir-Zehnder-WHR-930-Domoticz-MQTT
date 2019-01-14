@@ -32,7 +32,7 @@ IDXIntakeFanSpeed=329		# text
 IDXExhaustFanSpeed=330		# text
 IDXIntakeFanRPM=331		# text
 IDXExhaustFanRPM=332		# text
-IDXIntakeFanActive=333	# text
+IDXIntakeFanActive=333		# text
 IDXFanLevel=334			# text
 IDXFilter=335			# text
 IDXSelector=125			# selector 0=auto 10=away 20=low 30=middle 40=high !! Depends on model/CO2 sensor etc !!
