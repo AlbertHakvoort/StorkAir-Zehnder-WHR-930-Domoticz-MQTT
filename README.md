@@ -24,16 +24,16 @@ Add the following dummy Devices in Domoticz :
 
 OutsideAirTemp		# temperature
 SupplyAirTemp	  	# temperature
-ReturnAirTemp		# temperature
+ReturnAirTemp			# temperature
 ExhaustAirTemp		# temperature
 IntakeFanSpeed		# text
 ExhaustFanSpeed		# text
-IntakeFanRPM		# text
-ExhaustFanRPM		# text
+IntakeFanRPM			# text
+ExhaustFanRPM			# text
 IntakeFanActive		# text
-FanLevel			# text
-Filter				# text
-Selector			# selector 0=auto 10=away 20=low 30=middle 40=high !! Depends on model/CO2 sensor etc !!
+FanLevel					# text
+Filter						# text
+Selector					# selector 0=auto 10=away 20=low 30=middle 40=high !! Depends on model/CO2 sensor etc !!
 
 
 edit the whr930.py and fill the IDX's, serialport and MQTTserver address.
