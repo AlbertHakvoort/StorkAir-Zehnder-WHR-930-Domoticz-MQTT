@@ -51,7 +51,7 @@ Add the following dummy Devices in Domoticz :
 - Selector			# selector 0=auto 10=away 20=low 30=middle 40=high !! Depends on model/CO2 sensor etc !!
 
 
-* edit the whr930.py and fill the IDX's, serialport and MQTTserver address.
+edit the whr930.py and fill the IDX's, serialport and MQTTserver address.
 
 - SerialPort='/dev/YPort'		# Serial port WHR930
 - MQTTServer='127.0.0.1'		# IP MQTT broker
