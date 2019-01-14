@@ -1,6 +1,8 @@
 Interface with a StorkAir WHR930 on Domoticz
+
 Version 0.8 by albert[@]hakvoort[.]co
-based on code from Mosibi
+
+[based on code from Mosibi]
 
 Publish every 10 seconds the status on a MQTT Domoticz/in topic
 Listen on MQTT topic for commands to set the ventilation level
