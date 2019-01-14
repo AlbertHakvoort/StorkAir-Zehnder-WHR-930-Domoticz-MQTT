@@ -263,7 +263,7 @@ debug = False
 
 # Connect to the MQTT broker
 mqttc = mqtt.Client('whr930')
-mqttc.username_pw_set(username="myuser",password="mypass")
+#mqttc.username_pw_set(username="myuser",password="mypass")
 
 # Define the mqtt callbacks
 mqttc.on_connect = on_connect
@@ -292,4 +292,3 @@ while True:
         break
     
 # End of program
-
