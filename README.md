@@ -22,21 +22,21 @@ start script with python3 whr930.py
 
 Add the following dummy Devices in Domoticz :
 
-OutsideAirTemp		# temperature
+- OutsideAirTemp		# temperature
 
-SupplyAirTemp	  	# temperature
+- SupplyAirTemp	  	# temperature
 
-ReturnAirTemp		# temperature
+- ReturnAirTemp		# temperature
 
-ExhaustAirTemp		# temperature
+- ExhaustAirTemp		# temperature
 
-IntakeFanSpeed		# text
+- IntakeFanSpeed		# text
 
-ExhaustFanSpeed		# text
+- ExhaustFanSpeed		# text
 
-IntakeFanRPM		# text
+- IntakeFanRPM		# text
 
-ExhaustFanRPM		# text
+- ExhaustFanRPM		# text
 
 IntakeFanActive		# text
 
