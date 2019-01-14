@@ -123,7 +123,7 @@ def serial_command(cmd):
 
 def set_ventilation_level(nr):
     if nr == 0:
-	data = serial_command(b'\x07\xF0\x00\x99\x01\x00\x47\x07\x0F')
+        data = serial_command(b'\x07\xF0\x00\x99\x01\x00\x47\x07\x0F')
     elif nr == 1:
         data = serial_command(b'\x07\xF0\x00\x99\x01\x01\x48\x07\x0F')
     elif nr == 2:
